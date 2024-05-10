@@ -1,0 +1,55 @@
+*{
+    font-family: sans-serif;
+}
+
+
+
+
+body{
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+}
+
+header{
+    width: 99%;
+
+}
+
+header img{
+    border-radius: 90%;
+}
+
+.container{
+    margin-top: 50px ;
+    width: 440px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.link{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link a{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 20px;
+}

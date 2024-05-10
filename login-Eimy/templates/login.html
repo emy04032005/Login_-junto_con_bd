@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename="img/images.png") }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename="css/pico.min.css") }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename="css/style.css") }}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h2>Login</h2>
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/login">Iniciar seccion</a>
+                    </li>
+                    <li>
+                        <a href="/register">Registrarse</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <form action="/login" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre de Usuario">
+                    <label for>Contraseña</label>
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <input type="submit" value="Iniciar Cesion">
+                </form>
+            </div>
+        </main>
+
+    </body>
+</html>

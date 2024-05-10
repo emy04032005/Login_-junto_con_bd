@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/images.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pico.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7c0b14;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+            font-family: 'Playfair Display', serif; /* Agregar fuente Playfair Display */
+            font-style: italic; /* Opcional: agregar estilo cursiva */
+        }
+        p {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            margin-top: 20px;
+            background-color: #000000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #a2ff00;
+        }
+        .feature {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .feature img {
+            max-width: 45%;
+            border-radius: 10px;
+        }
+        .feature-text {
+            max-width: 45%;
+        }
+        .feature-text h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature-text p {
+            color: #666;
+        }
+        .testimonial {
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #ffedab;
+            border-radius: 10px;
+        }
+        .testimonial p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Tu media naranja</h1>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Encuentra Tu Pareja Perfecta</h1>
+        <div class="feature">
+            <div class="feature-text">
+                <h2>Tu media naranja</h2>
+                <p>Crea un perfil único que refleje tu personalidad y lo que estás buscando en una pareja.</p>
+            </div>
+            <img src="{{ url_for('static', filename="img/mujer1.jpg") }}" alt="Perfil Personalizado">
+        </div>
+        <div class="feature">
+            <img src="" alt="Emparejamiento Inteligente">
+            <div class="feature-text">
+                <h2>Emparejamiento Inteligente</h2>
+                <p>Nuestro algoritmo avanzado te conecta con personas compatibles basadas en tus preferencias y comportamientos.</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"¡Encontré el amor de mi vida gracias a esta increíble plataforma de citas! ¡Altamente recomendada!"</p>
+        </div>
+    </main>
+</body>
+</html>
